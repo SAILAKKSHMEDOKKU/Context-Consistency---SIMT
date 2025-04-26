@@ -871,7 +871,7 @@ class InteractiveConfig(FairseqDataclass):
 
 
 @dataclass
-class FairseqConfig(object):
+class FairseqConfig:
     common: CommonConfig = field(default_factory=CommonConfig)
     common_eval: CommonEvalConfig = field(default_factory=CommonEvalConfig)
     distributed_training: DistributedTrainingConfig = field(default_factory=DistributedTrainingConfig)
